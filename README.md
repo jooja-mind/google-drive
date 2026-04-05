@@ -56,3 +56,9 @@ const accessToken = await getAccessTokenFromEnv();
 ```
 
 After that, it makes a normal request to `https://www.googleapis.com/drive/v3/files`.
+
+## Related JQA examples
+
+- Apple Music: https://github.com/jooja-mind/apple-music-jqa
+- Notion: https://github.com/jooja-mind/notion-jqa
+- LinkedIn: https://github.com/jooja-mind/linkedin-jqa
