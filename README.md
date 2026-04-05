@@ -1,14 +1,14 @@
 # google-drive
 
-Очень простой пример проекта, который использует:
+A very simple example project that uses:
 - https://github.com/jooja-mind/jooja-auth-hub-client
 
-Что делает:
-- получает access token из JQA
-- запрашивает список последних файлов из Google Drive API
-- печатает красивый текстовый список в консоль
+What it does:
+- gets an access token from JQA
+- requests the latest files from the Google Drive API
+- prints a clean text list to the console
 
-## Установка
+## Install
 
 ```bash
 cd ~/node/google-drive
@@ -16,28 +16,28 @@ npm install
 cp .env.example .env
 ```
 
-Заполни в `.env`:
+Fill in `.env` with:
 - `JQA_UUID`
 - `JQA_SECRET`
 - `JQA_PROVIDER=google`
 - `JQA_BASE_URL=https://jooja-auth.leverton.dev`
 
-## Запуск
+## Run
 
 ```bash
 npm run list
 ```
 
-## Что внутри
+## What is inside
 
-Проект специально сделан максимально простым:
-- один файл: `src/index.js`
-- получение токена через `getAccessTokenFromEnv()`
-- обычный `fetch` в Google Drive API
+This project is intentionally as simple as possible:
+- one file: `src/index.js`
+- token retrieval via `getAccessTokenFromEnv()`
+- a plain `fetch` call to the Google Drive API
 
-## Зависимость
+## Dependency
 
-Проект использует GitHub dependency:
+This project uses a GitHub dependency:
 
 ```json
 {
@@ -47,7 +47,7 @@ npm run list
 }
 ```
 
-## Идея кода
+## Core idea
 
 ```js
 import { getAccessTokenFromEnv } from 'jooja-quick-auth';
@@ -55,4 +55,4 @@ import { getAccessTokenFromEnv } from 'jooja-quick-auth';
 const accessToken = await getAccessTokenFromEnv();
 ```
 
-Дальше обычный запрос в `https://www.googleapis.com/drive/v3/files`.
+After that, it makes a normal request to `https://www.googleapis.com/drive/v3/files`.
