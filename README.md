@@ -11,7 +11,7 @@ What it does:
 ## Install
 
 ```bash
-cd ~/node/google-drive
+cd ~/node/jqa_examples/google-drive
 npm install
 cp .env.example .env
 ```
