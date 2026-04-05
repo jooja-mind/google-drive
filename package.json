@@ -1,0 +1,13 @@
+{
+  "name": "google-drive",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Very simple Google Drive file lister powered by Jooja Quick Auth",
+  "scripts": {
+    "list": "node --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "jooja-quick-auth": "github:jooja-mind/jooja-auth-hub-client"
+  }
+}
